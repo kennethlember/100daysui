@@ -41,7 +41,7 @@
 }
 
 .home-content {
-  padding: 15px;
+  padding: 14px;
   background-color: aqua;
 }
 </style>
