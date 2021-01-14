@@ -1,15 +1,19 @@
 <template>
   <div class="flex-center">
     <div class="home-content">
-      <h1>
-        <img class="epictext" src="../assets/epictext2.gif" />
-      </h1>
-      <p class="bigtext">Sign up for the RTX 3090 giveaway (real)</p>
+      <h1></h1>
+      <p class="bigtext">Checkout</p>
       <div class="textboxes">
         <div class="user-textbox">
           <p>
-            <label>Full name: </label>
-            <input type="text" id="myName" value="John Smith" />
+            <label>First name: </label>
+            <input type="text" id="myName" value="John" />
+          </p>
+        </div>
+        <div class="surname-textbox">
+          <p>
+            <label>Last name: </label>
+            <input type="text" id="myName" value="Smith" />
           </p>
         </div>
         <div class="email-textbox">
@@ -31,63 +35,20 @@
           </p>
         </div>
         <div class="buttons">
-          <button class="signup" type="button">Sign up</button>
+          <button class="signup" type="button">Continue to pay</button>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <style>
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.home-content {
-  padding: 14px;
-  background-color: gray;
-  width: 100%;
-  border: 5px solid black;
-  border-radius: 3%;
-}
-
 .bigtext {
-  color: white;
-  font-size: 20px;
   font-weight: bold;
-}
-
-.textboxes {
-  color: white;
-}
-
-input {
-  height: 19px;
-  border: 1px solid black;
-  border-radius: 5%;
-  background-color: orange;
-}
-
-.epictext {
-  border: 5px solid black;
-}
-
-.buttons {
-  color: black;
-}
-
-.signup {
-  background-color: orange;
   border: 2px solid black;
-  border-radius: 5%;
-  color: black;
-  font-weight: bold;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  background-color: white;
 }
 label {
   display: inline-block;
@@ -97,11 +58,32 @@ label {
 }
 
 input {
+  background-color: pink;
+  border: none;
+  border-radius: 3%;
 }
 
 fieldset {
   border: none;
   width: 500px;
   margin: 0px auto;
+}
+.flex-center {
+  background-color: darkblue;
+  padding: 25px;
+}
+.textboxes {
+  color: white;
+}
+.signup {
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 3%;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
 </style>
