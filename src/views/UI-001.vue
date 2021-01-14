@@ -59,7 +59,9 @@ body {
 }
 
 .textboxes {
+  align-content: center;
   color: white;
+  padding-right: 65px;
 }
 
 input {
@@ -70,7 +72,7 @@ input {
 }
 
 .epictext {
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .buttons {

@@ -58,7 +58,7 @@ label {
 }
 
 input {
-  background-color: pink;
+  background-color: lightblue;
   border: none;
   border-radius: 3%;
 }
@@ -76,14 +76,20 @@ fieldset {
   color: white;
 }
 .signup {
-  background-color: pink;
   border: 1px solid black;
   border-radius: 3%;
-  color: black;
+  color: white;
   padding: 10px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  background: rgb(5, 0, 97);
+  background: radial-gradient(
+    circle,
+    rgba(5, 0, 97, 1) 0%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(0, 255, 248, 1) 100%
+  );
 }
 </style>
