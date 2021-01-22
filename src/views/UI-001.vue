@@ -1,44 +1,34 @@
 <template>
   <div class="flex-center">
     <div class="home-content">
-      <h1>
-        <img class="epictext" src="../assets/epictext2.gif" />
-      </h1>
-      <p class="bigtext">Sign up for the RTX 3090 giveaway (real)</p>
+      <h1></h1>
+      <p class="bigtext">Sign up for the giveaway</p>
       <div class="textboxes">
         <div class="user-textbox">
           <p>
             <label>Full name: </label>
-            <input type="text" id="myName" value="John Smith" />
+            <input type="text" id="myName" placeholder="Enter full name" />
           </p>
         </div>
         <div class="email-textbox">
           <p>
             <label>E-mail: </label>
-            <input type="text" id="myEmail" value="johnsmith@grindr.com" />
+            <input type="text" id="myEmail" placeholder="Enter e-mail" />
           </p>
         </div>
-        <div class="cc-textbox">
-          <p>
-            <label>Credit card number: </label>
-            <input type="text" id="myCC" value="1234 5678 9101 1121" />
-          </p>
-        </div>
-        <div class="ccb-textbox">
-          <p>
-            <label>CVV: </label>
-            <input type="text" id="myCCB" value="420" />
-          </p>
-        </div>
-        <div class="buttons">
-          <button class="signup" type="button">Sign up</button>
-        </div>
+      </div>
+      <div class="buttons">
+        <button class="signup" type="button">Sign up</button>
       </div>
     </div>
   </div>
 </template>
 
 <style>
+html {
+  background: darkmagenta;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -46,10 +36,10 @@ body {
 
 .home-content {
   padding: 14px;
-  background-color: gray;
+  background-color: darkorchid;
   width: 100%;
-  border: 5px solid black;
-  border-radius: 3%;
+  align-content: center;
+  box-shadow: 0 0 10px 5px black;
 }
 
 .bigtext {
@@ -59,20 +49,22 @@ body {
 }
 
 .textboxes {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   color: white;
-  padding-right: 65px;
 }
 
 input {
   height: 19px;
   border: 1px solid black;
   border-radius: 5%;
-  background-color: orange;
+  background-color: darkmagenta;
+  color: white;
 }
 
-.epictext {
-  border: 2px solid black;
+::placeholder {
+  color: silver;
+  opacity: 1;
 }
 
 .buttons {
@@ -80,9 +72,8 @@ input {
 }
 
 .signup {
-  background-color: orange;
+  background-color: orchid;
   border: 2px solid black;
-  border-radius: 5%;
   color: black;
   font-weight: bold;
   padding: 5px 10px;
@@ -93,7 +84,7 @@ input {
 }
 label {
   display: inline-block;
-  width: 200px;
+
   margin-right: 30px;
   text-align: right;
 }
